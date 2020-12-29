@@ -23,5 +23,6 @@ for(starting value; conditionto stop looping; adjustment per iteration;)
 We use .length because "#" is a string
 We want to compare apples to apples, so by doing .length it gives us back a number (the length of that string), and we are able to compare a number with a number (the length of a string and 7)
 
+triangle += "#" is the same as triangle = triangle + "#"
 
 */
