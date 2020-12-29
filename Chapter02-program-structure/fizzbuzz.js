@@ -44,3 +44,25 @@ for (let num = 1; num <= 100; num++){
     console.log(output || num); 
 }
 
+/* 
+for loop will iterate until num <= 100
+we create an empty output variable which will hold our answer
+if num is divisible by 3; then output = output + "Fizz" so output = "" + "Fizz" --> "Fizz"
+if num is divisible by 5; then output = output + "Buzz" so output = "" + "Buzz" --> "Buz"
+since JS is read from top to bottom, if both if statements are true 
+output = "" + "Fizz" --> output = "Fizz"
+output = "Fizz" + "Buzz" --> output = "FizzBuzz"
+Fizz and buzz are concatenated 
+
+if output = true (meaning its not an empty string), we print out the output OR (if its a number that is not divisible by 3, 5, or 3 and 5) we just print out the num
+*/
+
+// Solution 3
+for (let num = 1; num <= 100; num++){
+    console.log(
+        (num % 3 === 0 ? "Fizz" : "") + (num % 5 === 0 ? "Buzz" : "") || num)
+}
+
+/* 
+
+*/
