@@ -6,3 +6,45 @@ Write a function countBs that takes a string as its only argument and returns a 
 
 Next, write a function called countChar that behaves like countBs, except it takes a second argument that indicates the character that is to be counted (rather than counting only uppercase “B” characters). Rewrite countBs to make use of this new function.
 */
+
+
+// solution 1
+
+function countBs(str){
+ //return a call to countChar with input and "b"
+ return countChar(str, "B")
+}
+
+
+function countChar(str, char){
+    let result = 0
+        for(let i = 0; i < str.length; i++){
+            if(str[i] === char){
+                result += 1;
+            }
+        }
+        return result
+    }
+
+/*
+// solution 1 with psuedocode 
+function countBs(str){
+    //create a result variable and set to 0
+      //loop over the str
+          //if current character is a "B"
+              //increment result by 1
+      
+    //return that result  
+      
+    }
+function countChar(str, char){
+    //create a result variable and set to 0
+      //loop over the str
+          //if current character is = char
+              //increment result by 1
+      
+    //return that result  
+      
+    }
+
+*/
