@@ -29,7 +29,7 @@ for (let y = 0; y < size; y++){
     board += "\n"
 }
 
-
+ 
 /* 
 //first we set the variables size and board 
 
