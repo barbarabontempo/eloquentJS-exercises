@@ -54,7 +54,7 @@ var sum = (arr) => {
 }
 
 //range function with third argument: step 
-let range = (2, 10, 2) => {
+
 let range = (start, end, step) => {
     let arr=[];
     if(step > 0){
