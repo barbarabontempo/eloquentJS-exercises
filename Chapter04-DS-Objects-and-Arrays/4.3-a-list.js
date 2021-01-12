@@ -68,3 +68,11 @@ function arrayToList(arr) {
     }
   }
   // console.log(nthRecursive(arrayToList([10, 20, 30]), 1));
+
+
+
+  /*
+
+similar question from codesmith: ArrayBuilder
+Write a function arrayBuilder that takes in a count object and returns an array filled with the appropriate numbers of elements. The order of the elements in the array does not matter, but repeated elements should be grouped.
+  */
