@@ -79,15 +79,19 @@ Write a function arrayBuilder that takes in a count object and returns an array 
 
  function arrayBuilder(obj) {
   // ADD CODE HERE
+  //create an empty array to store the elements from the object 
   let arr = [];
 
+  //iterate through the object 
   for (let key in obj){
-    let value = obj[key]
-    for(let i = 0; i < value; i++){
-      arr.push(key)
+    //now we have access to key, which is the keys of our object: "cats" and "dogs"
+    //and we have access to obj[key], which is the value of our keys: 2 and 1
+    let value = obj[key] //defined a variable value and made it = to value of our keys
+    for(let i = 0; i < value; i++){ //now for each key we do a for loop, the number of times we loop = value of keys
+      arr.push(key) //push the key to our array that we made
     }
   }
-  return arr
+  return arr //return the arr
 }
 
 // Uncomment these to check your work!
